@@ -37,7 +37,6 @@ public class MiddleList extends AppCompatActivity {
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
 
-    Query query;
 
     String documentID;
 
