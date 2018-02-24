@@ -8,15 +8,27 @@ public class AdsClass {
     String vendorId;
     String url;
     String dessc;
+    String documentId;
+    String link;
 
 
     public AdsClass() {
     }
 
-    public AdsClass(String vendorId, String url, String dessc) {
+    public AdsClass(String vendorId, String url, String dessc, String documentId, String link) {
         this.vendorId = vendorId;
         this.url = url;
         this.dessc = dessc;
+        this.documentId = documentId;
+        this.link = link;
+    }
+
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
     }
 
     public String getVendorId() {
@@ -41,5 +53,14 @@ public class AdsClass {
 
     public void setDessc(String dessc) {
         this.dessc = dessc;
+    }
+
+
+    public String getDocumentId() {
+        return documentId;
+    }
+
+    public void setDocumentId(String documentId) {
+        this.documentId = documentId;
     }
 }

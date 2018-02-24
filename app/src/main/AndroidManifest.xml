@@ -25,7 +25,8 @@
         <activity android:name=".Splash" />
         <activity android:name=".ViewAudio" />
         <activity android:name=".SoundRecording" />
-        <activity android:name=".UploadAds"></activity>
+        <activity android:name=".UploadAds" />
+        <activity android:name=".AdsDetailed"></activity>
     </application>
 
 </manifest>

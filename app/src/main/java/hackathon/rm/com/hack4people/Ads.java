@@ -1,5 +1,6 @@
 package hackathon.rm.com.hack4people;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -109,7 +110,7 @@ public class Ads extends AppCompatActivity {
                     }).addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
                         @Override
                         public void onComplete(@NonNull Task<DocumentSnapshot> task) {
-                            Log.d("oncomplte","here");
+                            Log.d("onComplete","here");
                             trigger();
                         }
                     });
@@ -140,10 +141,15 @@ public class Ads extends AppCompatActivity {
                 injector.text(R.id.event_name,data.getVendorId())
                         .text(R.id.p1,data.getUrl());
                 LinearLayout ll = (LinearLayout) injector.findViewById(R.id.ll);
+
+                final String docId = data.getDocumentId();
                 ll.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Toast.makeText(Ads.this, "sjdhga", Toast.LENGTH_SHORT).show();
+
+                        Intent detailedIntent = new Intent(Ads.this,AdsDetailed.class);
+                        detailedIntent.putExtra("documentId",docId);
+                        startActivity(detailedIntent);
                     }
                 });
                 
