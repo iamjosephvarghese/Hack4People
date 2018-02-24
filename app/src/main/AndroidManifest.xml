@@ -14,7 +14,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SoundRecording">
+        <activity android:name=".Ads">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,7 +24,7 @@
         <activity android:name=".HomeActivity" />
         <activity android:name=".Splash" />
         <activity android:name=".ViewAudio" />
-        <activity android:name=".Ads"></activity>
+        <activity android:name=".SoundRecording"></activity>
     </application>
 
 </manifest>
