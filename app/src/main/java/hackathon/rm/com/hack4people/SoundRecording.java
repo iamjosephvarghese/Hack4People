@@ -26,7 +26,7 @@ import com.google.firebase.storage.UploadTask;
 import java.io.IOException;
 import java.util.Date;
 
-public class SoundRecording extends AppCompatActivity {
+public class    SoundRecording extends AppCompatActivity {
 
     private String outputFile = null;
     private MediaRecorder myAudioRecorder;
@@ -126,7 +126,7 @@ public class SoundRecording extends AppCompatActivity {
         sRef.putFile(url,metadata).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                audioFiles.set(new AudioClass(taskSnapshot.getDownloadUrl().toString(),"user1")).addOnSuccessListener(new OnSuccessListener<Void>() {
+                audioFiles.set(new AudioClass(taskSnapshot.getDownloadUrl().toString(),"user1",false)).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
                         Log.d("audio push","success");

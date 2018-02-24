@@ -8,10 +8,12 @@ public class AudioClass {
 
     String url;
     String uId;
+    Boolean status;
 
-    public AudioClass(String url, String uId) {
+    public AudioClass(String url, String uId, Boolean status) {
         this.url = url;
         this.uId = uId;
+        this.status = status;
     }
 
     public AudioClass() {
@@ -31,5 +33,13 @@ public class AudioClass {
 
     public void setuId(String uId) {
         this.uId = uId;
+    }
+
+    public Boolean getStatus() {
+        return status;
+    }
+
+    public void setStatus(Boolean status) {
+        this.status = status;
     }
 }
