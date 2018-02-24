@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "21910484653",
+    "firebase_url": "https://hack4people-893ae.firebaseio.com",
+    "project_id": "hack4people-893ae",
+    "storage_bucket": "hack4people-893ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21910484653:android:dc2503aa669a9ac6",
+        "android_client_info": {
+          "package_name": "hackathon.rm.com.hack4people"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "21910484653-7fo215l130gcc9doik2j0ihjhsarff0c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hackathon.rm.com.hack4people",
+            "certificate_hash": "c5a69f157519d4d96b1d8e35a1dc7423d69f8659"
+          }
+        },
+        {
+          "client_id": "21910484653-3dfhgsjp9n8tucu086ch5abmkb7itjk7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDg803fqDpqKtIyeEMgvdobRF0QyYH2yic"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "21910484653-3dfhgsjp9n8tucu086ch5abmkb7itjk7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
