@@ -23,7 +23,8 @@
         </activity>
         <activity android:name=".HomeActivity" />
         <activity android:name=".Splash" />
-        <activity android:name=".ViewAudio"></activity>
+        <activity android:name=".ViewAudio" />
+        <activity android:name=".Ads"></activity>
     </application>
 
 </manifest>
