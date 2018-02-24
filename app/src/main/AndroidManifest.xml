@@ -24,7 +24,8 @@
         <activity android:name=".HomeActivity" />
         <activity android:name=".Splash" />
         <activity android:name=".ViewAudio" />
-        <activity android:name=".SoundRecording"></activity>
+        <activity android:name=".SoundRecording" />
+        <activity android:name=".UploadAds"></activity>
     </application>
 
 </manifest>

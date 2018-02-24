@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -136,8 +139,17 @@ public class Ads extends AppCompatActivity {
                 Log.d("inside inject","...");
                 injector.text(R.id.event_name,data.getVendorId())
                         .text(R.id.p1,data.getUrl());
+                LinearLayout ll = (LinearLayout) injector.findViewById(R.id.ll);
+                ll.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Toast.makeText(Ads.this, "sjdhga", Toast.LENGTH_SHORT).show();
+                    }
+                });
+                
             }
-        }).attachTo(recyclerView);
+        }).attachTo(recyclerView)
+                .updateData(fetchedAds);
     }
 }
 
