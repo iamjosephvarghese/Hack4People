@@ -1,5 +1,7 @@
 package hackathon.rm.com.hack4people;
 
+import android.content.Intent;
+
 /**
  * Created by josephvarghese on 25/02/18.
  */
@@ -7,12 +9,12 @@ package hackathon.rm.com.hack4people;
 public class MiddleClass {
     String uid;
     String name;
-    Float rating;
+    Integer rating;
     String address;
     Integer contactNo;
 
 
-    public MiddleClass(String uid, String name, Float rating, String address, Integer contactNo) {
+    public MiddleClass(String uid, String name, Integer rating, String address, Integer contactNo) {
         this.uid = uid;
         this.name = name;
         this.rating = rating;
@@ -40,11 +42,11 @@ public class MiddleClass {
         this.name = name;
     }
 
-    public Float getRating() {
+    public Integer getRating() {
         return rating;
     }
 
-    public void setRating(Float rating) {
+    public void setRating(Integer rating) {
         this.rating = rating;
     }
 

@@ -14,7 +14,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FarmerUpload">
+        <activity android:name=".MiddleList">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,8 +27,10 @@
         <activity android:name=".SoundRecording" />
         <activity android:name=".UploadAds" />
         <activity android:name=".AdsDetailed" />
-        <activity android:name=".Ads"/>
-        <activity android:name="ShowSelected"/>
+        <activity android:name=".Ads" />
+        <activity android:name=".ShowSelected" />
+        <activity android:name=".FarmerUpload" />
+        <activity android:name=".MiddleDetailed"></activity>
     </application>
 
 </manifest>
