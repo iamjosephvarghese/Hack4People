@@ -1,6 +1,7 @@
 package hackathon.rm.com.hack4people;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -33,6 +34,8 @@ public class MiddleDetailed extends AppCompatActivity {
     MaterialDialog dialog;
 
     MiddleClass middleClass;
+
+    String no;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -101,7 +104,9 @@ public class MiddleDetailed extends AppCompatActivity {
         call.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                TODO add call code
+                 Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:" + Integer.toString(middleClass.getContactNo())));
+                startActivity(intent);
             }
         });
 
@@ -124,7 +129,7 @@ public class MiddleDetailed extends AppCompatActivity {
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                        Log.d("connection push","errore");
+                        Log.d("connection push","errors");
                     }
                 });
 
@@ -142,7 +147,7 @@ public class MiddleDetailed extends AppCompatActivity {
     public void trigger(){
         name.setText(middleClass.getName());
         address.setText(middleClass.getAddress());
-//        contact.setText(middleClass.getContactNo());
+        contact.setText(Integer.toString(middleClass.getContactNo()));
 //        rating.setText(middleClass.getRating());
 
         call.setVisibility(View.VISIBLE);
