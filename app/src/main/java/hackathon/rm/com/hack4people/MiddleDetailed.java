@@ -117,7 +117,7 @@ public class MiddleDetailed extends AppCompatActivity {
 
                 DocumentReference updateNew = db.collection("Connections").document();
                 Map<String,Object> dataStore = new HashMap<>();
-                dataStore.put("farmerId","abcd");
+                dataStore.put("farmerId","farmer1");
                 dataStore.put("middleId",middleClass.getUid());
                 dataStore.put("initialPayment",10000);
 
@@ -133,19 +133,14 @@ public class MiddleDetailed extends AppCompatActivity {
                     }
                 });
 
-//                TODO push data to firestore
+
             }
         });
 
-
-
-
     }
 
-
-
     public void trigger(){
-        name.setText(middleClass.getName());
+        name.setText(middleClass.getName().toUpperCase());
         address.setText(middleClass.getAddress());
         contact.setText(Integer.toString(middleClass.getContactNo()));
 //        rating.setText(middleClass.getRating());

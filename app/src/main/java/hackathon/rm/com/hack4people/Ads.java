@@ -138,7 +138,7 @@ public class Ads extends AppCompatActivity {
 
                 Log.d("inside inject","...");
                 injector.text(R.id.event_name,data.getVendorId())
-                        .text(R.id.p1,data.getDocumentId());
+                        .text(R.id.p1,data.getDessc());
                 LinearLayout ll = (LinearLayout) injector.findViewById(R.id.ll);
 
                 final String docId = data.getDocumentId();

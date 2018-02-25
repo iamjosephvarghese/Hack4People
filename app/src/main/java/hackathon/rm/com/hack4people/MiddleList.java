@@ -125,7 +125,7 @@ public class MiddleList extends AppCompatActivity {
             public void onInject(MiddleClass data, IViewInjector injector) {
 
                 Log.d("inside inject","...");
-                injector.text(R.id.event_name,data.getUid())
+                injector.text(R.id.event_name,data.getUid().toUpperCase())
                         .text(R.id.p1,data.getRating().toString());
                 LinearLayout ll = (LinearLayout) injector.findViewById(R.id.ll);
 
