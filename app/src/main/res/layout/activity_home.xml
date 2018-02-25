@@ -8,7 +8,7 @@
     tools:context="hackathon.rm.com.hack4people.HomeActivity">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/middleList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -16,7 +16,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/button_selector"
-        android:text="Button"
+        android:padding="10dp"
+        android:text="Vendor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -25,15 +26,16 @@
         app:layout_constraintVertical_bias="0.586" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/itemUpload"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
+        android:padding="10dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/button_selector"
-        android:text="Button"
+        android:text="Item Upload"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,7 +43,7 @@
         app:layout_constraintVertical_bias="0.586" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/audioFetch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -49,7 +51,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/button_selector"
-        android:text="Button"
+        android:padding="10dp"
+        android:text="Audio Fetch"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.808"
@@ -58,15 +61,16 @@
         app:layout_constraintVertical_bias="0.317" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/audioUpload"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="10dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/button_selector"
-        android:text="Button"
+        android:text="Audio Upload"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.161"
@@ -75,15 +79,16 @@
         app:layout_constraintVertical_bias="0.317" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/viewAd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="10dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/button_selector"
-        android:text="Button"
+        android:text="View Ad"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
