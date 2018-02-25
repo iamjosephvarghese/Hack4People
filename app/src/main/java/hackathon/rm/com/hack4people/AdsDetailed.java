@@ -1,6 +1,7 @@
 package hackathon.rm.com.hack4people;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -79,7 +80,7 @@ public class AdsDetailed extends AppCompatActivity {
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                Log.d("fetch doc again error",".......");
+                Log.d("fetch doc again error","...........");
             }
         }).addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
             @Override
@@ -87,7 +88,7 @@ public class AdsDetailed extends AppCompatActivity {
                 if(detailedFetch != null){
                     trigger();
                 }else{
-                    Log.d("trigger check false","....");
+                    Log.d("trigger check false","..........");
                 }
             }
         });
@@ -97,7 +98,13 @@ public class AdsDetailed extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                TODO open link in chrome   detailedfetch.getLin
+
+
+                String url = detailedFetch.getLink();
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+
             }
         });
 

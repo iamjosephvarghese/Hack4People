@@ -54,7 +54,7 @@ public class HomeActivity extends AppCompatActivity {
 
 
 
-        id.setText(uid);
+        id.setText(uid.toUpperCase());
 
         collectionReference.document(uid).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override

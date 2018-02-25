@@ -3,21 +3,40 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#000"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="hackathon.rm.com.hack4people.FarmerUpload">
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="35sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:text="ITEM UPLOAD" />
+
     <EditText
         android:id="@+id/item"
         android:layout_width="match_parent"
+        android:layout_marginTop="200dp"
+        android:padding="10dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:background="@drawable/border"
         android:hint="ITEM" />
 
     <EditText
         android:id="@+id/qty"
         android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
         android:inputType="number"
+        android:background="@drawable/border"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:hint="QTY" />
@@ -25,8 +44,10 @@
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
+        android:layout_marginTop="40dp"
         android:layout_height="wrap_content"
         android:text="Button"
+        android:background="@drawable/button_selector"
         android:layout_gravity="center_horizontal"/>
 
 
