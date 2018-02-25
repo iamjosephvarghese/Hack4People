@@ -26,9 +26,8 @@ import net.idik.lib.slimadapter.SlimAdapter;
 import net.idik.lib.slimadapter.SlimInjector;
 import net.idik.lib.slimadapter.viewinjector.IViewInjector;
 
-import java.sql.Ref;
 import java.util.ArrayList;
-import java.util.List;
+
 
 public class Ads extends AppCompatActivity {
 

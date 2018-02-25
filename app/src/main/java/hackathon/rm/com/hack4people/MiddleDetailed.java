@@ -14,9 +14,13 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QuerySnapshot;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class MiddleDetailed extends AppCompatActivity {
 
@@ -98,6 +102,33 @@ public class MiddleDetailed extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 //                TODO add call code
+            }
+        });
+
+
+        connect.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                DocumentReference updateNew = db.collection("Connections").document();
+                Map<String,Object> dataStore = new HashMap<>();
+                dataStore.put("farmerId","abcd");
+                dataStore.put("middleId",middleClass.getUid());
+                dataStore.put("initialPayment",10000);
+
+                updateNew.set(dataStore).addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                        Log.d("connection push","success");
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Log.d("connection push","errore");
+                    }
+                });
+
+//                TODO push data to firestore
             }
         });
 
