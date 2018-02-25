@@ -3,50 +3,69 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_gravity="center_horizontal|center_vertical"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/middle_detail"
+    android:gravity="center_vertical|center_horizontal"
     tools:context="hackathon.rm.com.hack4people.MiddleDetailed">
 
-     <TextView
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:id="@+id/name"
-         android:layout_gravity="center_horizontal"
-         android:gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:textColor="#fff"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#fff"
         android:id="@+id/rating"
         android:layout_gravity="center_horizontal"
-        android:gravity="center_horizontal"/>
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#fff"
         android:id="@+id/address"
         android:layout_gravity="center_horizontal"
-        android:gravity="center_horizontal"/>
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#fff"
         android:id="@+id/contact"
         android:layout_gravity="center_horizontal"
-        android:gravity="center_horizontal"/>
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"/>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="call"
+        android:textColor="#fff"
         android:id="@+id/call"
         android:layout_gravity="center_horizontal"
-        android:gravity="center_horizontal"/>
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_selector"
+        />
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="connect"
+        android:textColor="#fff"
         android:id="@+id/connect"
         android:layout_gravity="center_horizontal"
-        android:gravity="center_horizontal"/>
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_selector"/>
 
 </LinearLayout>
