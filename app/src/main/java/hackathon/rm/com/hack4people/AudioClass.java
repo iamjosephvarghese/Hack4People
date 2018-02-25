@@ -9,11 +9,13 @@ public class AudioClass {
     String url;
     String uId;
     Boolean status;
+    String answer;
 
-    public AudioClass(String url, String uId, Boolean status) {
+    public AudioClass(String url, String uId, Boolean status, String answer) {
         this.url = url;
         this.uId = uId;
         this.status = status;
+        this.answer = answer;
     }
 
     public AudioClass() {
@@ -41,5 +43,14 @@ public class AudioClass {
 
     public void setStatus(Boolean status) {
         this.status = status;
+    }
+
+
+    public String getAnswer() {
+        return answer;
+    }
+
+    public void setAnswer(String answer) {
+        this.answer = answer;
     }
 }

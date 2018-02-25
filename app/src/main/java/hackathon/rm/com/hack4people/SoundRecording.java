@@ -126,7 +126,7 @@ public class    SoundRecording extends AppCompatActivity {
         sRef.putFile(url,metadata).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                audioFiles.set(new AudioClass(taskSnapshot.getDownloadUrl().toString(),"user1",false)).addOnSuccessListener(new OnSuccessListener<Void>() {
+                audioFiles.set(new AudioClass(taskSnapshot.getDownloadUrl().toString(),"user1",false," ")).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
                         Log.d("audio push","success");

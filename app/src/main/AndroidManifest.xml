@@ -14,7 +14,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MiddleList">
+        <activity android:name=".ViewAudio">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,14 +23,14 @@
         </activity>
         <activity android:name=".HomeActivity" />
         <activity android:name=".Splash" />
-        <activity android:name=".ViewAudio" />
+        <activity android:name=".MiddleList" />
         <activity android:name=".SoundRecording" />
         <activity android:name=".UploadAds" />
         <activity android:name=".AdsDetailed" />
         <activity android:name=".Ads" />
         <activity android:name=".ShowSelected" />
         <activity android:name=".FarmerUpload" />
-        <activity android:name=".MiddleDetailed"></activity>
+        <activity android:name=".MiddleDetailed"/>
     </application>
 
 </manifest>

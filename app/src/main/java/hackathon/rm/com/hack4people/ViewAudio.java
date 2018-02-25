@@ -72,7 +72,8 @@ public class ViewAudio extends AppCompatActivity {
 
 //        CollectionReference audioFiles = db.collection("AudioFiles");
 
-        query = db.collection("AudioFiles");
+        query = db.collection("AudioFiles").orderBy("status", Query.Direction.DESCENDING);
+//TODO sorting based on if answered by checking status
 
 
 
@@ -90,7 +91,7 @@ public class ViewAudio extends AppCompatActivity {
                     documentList.add(documentID);
 
 
-                    DocumentReference adsRef = db.collection("Ads").document(documentID);
+                    DocumentReference adsRef = db.collection("AudioFiles").document(documentID);
                     adsRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                         @Override
                         public void onSuccess(DocumentSnapshot documentSnapshot) {
@@ -145,7 +146,7 @@ public class ViewAudio extends AppCompatActivity {
 
                 Log.d("inside inject","...");
                 injector.text(R.id.event_name,data.getuId())
-                        .text(R.id.p1,data.getStatus().toString());
+                        .text(R.id.p1,data.getAnswer());
                 LinearLayout ll = (LinearLayout) injector.findViewById(R.id.ll);
 
 //                final String docId = data.getDocumentId();
