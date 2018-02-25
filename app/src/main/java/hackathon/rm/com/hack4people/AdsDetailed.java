@@ -49,6 +49,7 @@ public class AdsDetailed extends AppCompatActivity {
 
         Intent getDoc = getIntent();
         String documentId = getDoc.getStringExtra("documentId");
+        Log.d("docsId",documentId);
 
         final FirebaseFirestore db = FirebaseFirestore.getInstance();
 

@@ -138,7 +138,7 @@ public class Ads extends AppCompatActivity {
 
                 Log.d("inside inject","...");
                 injector.text(R.id.event_name,data.getVendorId())
-                        .text(R.id.p1,data.getUrl());
+                        .text(R.id.p1,data.getDocumentId());
                 LinearLayout ll = (LinearLayout) injector.findViewById(R.id.ll);
 
                 final String docId = data.getDocumentId();
@@ -148,6 +148,7 @@ public class Ads extends AppCompatActivity {
 
                         Intent detailedIntent = new Intent(Ads.this,AdsDetailed.class);
                         detailedIntent.putExtra("documentId",docId);
+                        Log.d("docId",docId);
                         startActivity(detailedIntent);
                     }
                 });
