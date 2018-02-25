@@ -50,7 +50,7 @@ public class FarmerUpload extends AppCompatActivity {
     private StorageMetadata metadata;
 
 
-    String itemS,qtyS,farmerId = "abcd";
+    String itemS,qtyS,farmerId = "farmer1";
 //    TODO shared prefrences
 
     MaterialDialog.Builder builder;
